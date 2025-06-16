@@ -14,7 +14,7 @@ calculate() {
                    ((num == 0)) && { log_error "Ошибка: деление на ноль"; exit 1; }
                    ((result /= num))
                done ;;
-        pow)   ((result = $2 ** $3)) ;;
+        pow)   ((result = $2 ** 2)) ;;
         *)     log_error "Неверная операция: $1"; exit 1 ;;
     esac
     echo "Результат: $result"
